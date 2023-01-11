@@ -1,0 +1,8 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[905],{40905:function(e,t,n){n.r(t),n.d(t,{default:function(){return E}});var a=n(27378),l=n(96740),r=n(33996),c=(n(58299),n(38721));function m(){const e=new c.Z;return a.createElement(r.Xg,{module:e},a.createElement(r.Xg.Breadcrumb,null),a.createElement(r.Xg.Panel,null,a.createElement(r.s_.Header,{hasNew:!0,hasSearch:!0}),a.createElement(r.s_.ListView,{tableScroll:{x:1320,y:700},module:e})))}var u=n(53988),d=n(3487),s=n(27080),i=n(46067);var o=()=>{const e=(0,l.s0)(),{price_id:t}=(0,l.UO)(),[n,m]=(0,a.useState)({}),[o,E]=(0,a.useState)(!1),p=new c.Z,b=p.title[0],h=`${i.AW.replace("*","")}`,f=[...p.breadcrumbItems,{path:"",breadcrumbName:t?`Updata ${b} - ${t}`:`New ${b}`}];(0,a.useEffect)((()=>{t&&(E(!0),p.apiService.getOne(+t).then((e=>{m(e)})).finally((()=>{E(!1)})))}),[]);return a.createElement(r.Xg,{module:p},a.createElement(r.Xg.Breadcrumb,{routes:f}),a.createElement(r.Xg.Panel,null,a.createElement(d.j,null,a.createElement("div",{className:"header"},a.createElement(u.Z,{onClose:()=>e(`/admin${h}`),items:f})),o?a.createElement(r.aN,null):a.createElement(s.default,{singleData:n,onCallback:()=>{e(-1)}}))))};function E(){return a.createElement(l.Z5,null,a.createElement(l.AW,{path:"",element:a.createElement(m,null)}),a.createElement(l.AW,{path:"/upsert",element:a.createElement(o,null)}),a.createElement(l.AW,{path:"/upsert/:price_id",element:a.createElement(o,null)}))}},3487:function(e,t,n){n.d(t,{j:function(){return a}});const a=n(26761).ZP.div`
+  padding: 32px;
+  .header {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px dashed #ededed;
+  }
+`}}]);
