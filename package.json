@@ -16,6 +16,8 @@
     "release": "npm version patch",
     "prestart": "yarn prepare-config",
     "postinstall": "yarn prepare-config",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.babel.js",
     "prepare-config": "node webpack/generateTranslation.js && node webpack/generateAdminRoutes.js",
